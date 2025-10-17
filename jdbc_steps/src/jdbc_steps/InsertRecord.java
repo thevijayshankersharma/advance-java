@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class InsertRecord {
     public static void main(String[] args) {
-        try {
+        try { 
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("loaded.......");
 
