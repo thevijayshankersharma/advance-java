@@ -1,0 +1,21 @@
+# Eclipse/IDEA project files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Output folders
+bin/
+target/
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code (if used)
+.vscode/
