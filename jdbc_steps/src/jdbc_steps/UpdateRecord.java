@@ -1,4 +1,4 @@
-package demo;
+package jdbc_steps;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ public class UpdateRecord {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?user=root&password=root");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_steps?user=root&password=root");
             System.out.println("Connection established");
             
             Statement st = con.createStatement();
