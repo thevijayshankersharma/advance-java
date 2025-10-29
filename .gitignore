@@ -20,3 +20,8 @@ Thumbs.db
 # VS Code (if used)
 .vscode/
 .metadata/
+
+# Ignore these project directories temporarily
+Servers/
+demoservlet/
+firstservletproject/
