@@ -24,4 +24,4 @@ Thumbs.db
 # Ignore these project directories temporarily
 Servers/
 demoservlet/
-firstservletproject/
+firstservletproject/ 
