@@ -17,8 +17,7 @@ target/
 *.war
 *.ear
 
-# MySQL JDBC Driver
-lib/mysql-connector-j-*.jar
+.metadata
 
 # Eclipse Web project
 *.log
