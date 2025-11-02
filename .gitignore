@@ -1,27 +1,44 @@
-# Eclipse/IDEA project files
-.classpath
+# Eclipse project files
 .project
+.classpath
 .settings/
-.idea/
-*.iml
 
-# Output folders
-bin/
+# Build output (compiled classes)
+build/
 target/
-out/
 
-# OS-specific files
+# IDE-specific files
+*.iml
+.idea/
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+
+# MySQL JDBC Driver
+lib/mysql-connector-j-*.jar
+
+# Eclipse Web project
+*.log
+*.bak
+*.swp
+
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Maven specific
+/.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
 
-# VS Code (if used)
-.vscode/
-.metadata/
+# Gradle specific
+.gradle/
 
-# Ignore these project directories temporarily
-Servers/
-demoservlet/
-firstservletproject/ 
+# Temporary files
+*.tmp
+*.bak
+*.swp
