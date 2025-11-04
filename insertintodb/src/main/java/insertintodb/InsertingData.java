@@ -20,6 +20,7 @@ public class InsertingData extends GenericServlet {
         int id = Integer.parseInt(req.getParameter("id"));
         String name = req.getParameter("name");
         double sal = Double.parseDouble(req.getParameter("sal"));
+        String gender = req.getParameter("gender");
 
         Connection con = null;
         PreparedStatement ps = null;
@@ -27,12 +28,13 @@ public class InsertingData extends GenericServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_steps","root","root");
-            ps = con.prepareStatement("insert into emp values (?,?,?)");
+            ps = con.prepareStatement("insert into emp values (?,?,?,?)");
             
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setDouble(3, sal);
-            
+            ps.setString(4, gender);
+
             ps.executeUpdate();
             
             System.out.println("Record has been added to database");
